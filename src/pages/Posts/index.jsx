@@ -1,6 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 
-const Posts = () => <View />;
+const Posts = ({ posts }) => (
+  <View>
+    {posts.map((post, id) => (
+      <Text key={id}>{post}</Text>
+    ))}
+  </View>
+);
 
 export default Posts;
