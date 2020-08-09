@@ -1,9 +1,9 @@
 import React from 'react';
 import Container, { Title } from './styles';
 
-const Header = () => (
+const Header = ({ title }) => (
   <Container>
-    <Title>NotePad</Title>
+    <Title>{title}</Title>
   </Container>
 );
 

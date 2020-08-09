@@ -6,14 +6,16 @@ const Home = ({ navigation, posts, setPosts }) => {
   const [post, setPost] = useState('');
 
   function handlePost() {
-    setPosts([...posts, post]);
+    if (post.trim() !== '') {
+      setPosts([...posts, post]);
+    }
     setPost('');
 
     navigation.navigate('Posts');
   }
   return (
     <Container>
-      <Header />
+      <Header title="Bloco de Notas" />
       <TextArea
         value={post}
         onChangeText={(e) => setPost(e)}

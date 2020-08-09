@@ -1,12 +1,18 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import Container, { PostsContainer, PostButton, PostText } from './styles';
+import Header from '../../components/Header';
 
 const Posts = ({ posts }) => (
-  <View>
-    {posts.map((post, id) => (
-      <Text key={id}>{post}</Text>
-    ))}
-  </View>
+  <Container>
+    <Header title="Posts" />
+    <PostsContainer>
+      {posts.map((post, id) => (
+        <PostButton key={id}>
+          <PostText>{post}</PostText>
+        </PostButton>
+      ))}
+    </PostsContainer>
+  </Container>
 );
 
 export default Posts;
