@@ -21,5 +21,6 @@ export const PostButton = styled.TouchableOpacity`
 `;
 
 export const PostText = styled.Text`
-  font-size: 15px;
+  color: ${(props) => (props.type === 'title' ? '#000' : '#999')};
+  font-size: ${(props) => (props.type === 'title' ? '15px' : '10px')};
 `;

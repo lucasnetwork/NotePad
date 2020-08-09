@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from './pages/Home';
 import Posts from './pages/Posts';
+import Details from './pages/Details';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,9 @@ const Routes = () => {
         </Stack.Screen>
         <Stack.Screen name="Posts">
           {(props) => <Posts {...props} posts={posts} />}
+        </Stack.Screen>
+        <Stack.Screen name="Details">
+          {(props) => <Details {...props} setPosts={setPosts} posts={posts} />}
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

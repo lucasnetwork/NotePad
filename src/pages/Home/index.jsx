@@ -1,24 +1,38 @@
 import React, { useState } from 'react';
-import Container, { TextArea, ButtonSave, ButtonText } from './styles';
 import Header from '../../components/Header';
+import {
+  TextArea,
+  InputTitle,
+  Container,
+  ButtonText,
+  ButtonSave,
+} from '../../styles/Inputs';
 
 const Home = ({ navigation, posts, setPosts }) => {
-  const [post, setPost] = useState('');
+  const [content, setContent] = useState('');
+  const [title, setTitle] = useState('');
 
   function handlePost() {
-    if (post.trim() !== '') {
-      setPosts([...posts, post]);
+    if (content.trim() !== '') {
+      setPosts([...posts, { title, content }]);
     }
-    setPost('');
+    setContent('');
+    setTitle('');
 
     navigation.navigate('Posts');
   }
   return (
     <Container>
       <Header title="Bloco de Notas" />
+      <InputTitle
+        value={title}
+        onChangeText={(e) => setTitle(e)}
+        multiline
+        placeholder="Titulo"
+      />
       <TextArea
-        value={post}
-        onChangeText={(e) => setPost(e)}
+        value={content}
+        onChangeText={(e) => setContent(e)}
         multiline
         placeholder="escreva"
       />
