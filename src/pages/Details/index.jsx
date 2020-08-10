@@ -25,7 +25,7 @@ const Details = ({ route, navigation, setPosts, posts }) => {
   }
   return (
     <Container>
-      <Header title="Detalhes" />
+      <Header title="Detalhes" navigation={navigation} page="Posts" />
       <TextContainer>
         <InputTitle
           value={post.title}

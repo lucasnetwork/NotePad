@@ -23,7 +23,12 @@ const Home = ({ navigation, posts, setPosts }) => {
   }
   return (
     <Container>
-      <Header title="Bloco de Notas" />
+      <Header
+        title="Bloco de Notas"
+        navigation={navigation}
+        page="Posts"
+        type="go"
+      />
       <InputTitle
         value={title}
         onChangeText={(e) => setTitle(e)}
