@@ -1,8 +1,8 @@
 # NotePad
 <div style="display:flex">
-    <div style="text-align:center;"><img src="./.GitHub/images/ViewHome.jpg" /></div>
-    <div style="text-align:center"><img src="./.GitHub/images/ViewPosts.jpg" /></div>
-    <div style="text-align:center"><img src="./.GitHub/images/ViewDetails.jpg" /></div>
+    <div><img src="./.GitHub/images/ViewHome.jpg" /></div>
+    <div><img src="./.GitHub/images/ViewPosts.jpg" /></div>
+    <div><img src="./.GitHub/images/ViewDetails.jpg" /></div>
 </div>
 
 Aplicação mobile de bloco de notas simples
