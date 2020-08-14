@@ -13,20 +13,15 @@ const Routes = () => {
 
   useEffect(() => {
     AsyncStorage.getItem('@teste').then((res) => {
-      console.log('test', res);
       if (res) {
         setPosts(JSON.parse(res));
-        console.log(posts);
       }
     });
   }, []);
   useEffect(() => {
     if (posts.length > 0) {
       const jsonPosts = JSON.stringify(posts);
-      AsyncStorage.setItem('@teste', jsonPosts).catch(() =>
-        console.log('erro')
-      );
-      console.log('oioi');
+      AsyncStorage.setItem('@teste', jsonPosts);
     }
   }, [posts]);
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/EvilIcons';
-import { View } from 'react-native';
 import Container, {
   PostsContainer,
   PostButton,

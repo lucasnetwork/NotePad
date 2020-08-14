@@ -20,6 +20,7 @@ export const PostContainer = styled.View`
   margin-bottom: 10px;
   justify-content: space-between;
   align-content: center;
+  overflow: hidden;
 `;
 
 export const PostButton = styled.TouchableOpacity`
