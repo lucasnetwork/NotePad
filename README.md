@@ -1,5 +1,5 @@
 # NotePad
-<div style="display:flex">
+<div style="align:center">
     <div><img src="./.GitHub/images/ViewHome.jpg" /></div>
     <div><img src="./.GitHub/images/ViewPosts.jpg" /></div>
     <div><img src="./.GitHub/images/ViewDetails.jpg" /></div>
